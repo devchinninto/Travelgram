@@ -15,6 +15,11 @@ header .container {
   gap: 32px;
 }
 
+#profile img {
+  display: flex;
+  height: 100%;
+}
+
 #profile > div {
   max-width: 384px;
 }
