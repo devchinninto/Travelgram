@@ -48,15 +48,15 @@ header .container {
   margin-right: auto;
 }
 
+a {
+  text-decoration: none;
+  appearance: unset;
+
+  font: var(--text);
+  color: var(--text-color-secondary);
+}  
+
 .menu {
-  & a {
-    text-decoration: none;
-    appearance: unset;
-
-    font: var(--text);
-    color: var(--text-color-secondary);
-  }  
-
   & span > img {
     width: 1.5rem;
   }
@@ -77,13 +77,26 @@ h1 {
   margin-bottom: 0.5rem;
 }
 
+footer {
+  flex-direction: column;
+  padding-inline: var(--px-md);
+  padding-block: var(--py-sm);
+}
+
 @media (width >= 76em) {
   :root {
     --heading: 700 2rem/125% var(--ff-sans);
   }
-
+  
   & header .container {
     padding-inline: var(--py-xl);
     padding-block: var(--py-md);
+  }
+
+  & footer {
+    flex-direction: row;
+    justify-content: space-between;
+    padding-inline: var(--px-lg);
+    padding-block: var(--py-lg);
   }
 }
