@@ -1,0 +1,66 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --ff-sans: "Poppins", system-ui, sans-serif;
+  --heading: 700 1.5rem/125% var(--ff-sans);
+  --text: 400 1rem/150% var(--ff-sans);
+  --text-md: 400 0.875rem/170% var(--ff-sans);
+  --text-sm: 400 0.75rem/150% var(--ff-sans);
+  
+  --brand-color: #EF5F4C;
+  --bg-color: #FFFFFF;
+  --surface-color: #F5F5F5;
+  --skeleton-color: #D9D9D9;
+  --shape-transparency: #ffffff56;
+  --text-color-primary: #313131;
+  --text-color-secondary: #6C6C6C;
+
+  --px-lg: 2rem;
+  --px-md: 1rem;
+  --py-xl: 2rem;
+  --py-lg: 1.5rem;
+  --py-md: 1.25rem;
+  --py-sm: 1rem;
+}
+
+.container {
+  padding: var(--px-md);  
+}
+
+.logo {
+  margin-right: auto;
+}
+
+.menu {
+  & a {
+    text-decoration: none;
+  }  
+
+  & span > img {
+    width: 1.5rem;
+  }
+
+  & .profile-icon {
+    width: 2.5rem;
+    height: 2.5rem;
+  }
+}
+
+.desktop-only {
+  
+}
+
+@media (width >= 76em) {
+  :root {
+    --heading: 700 2rem/125% var(--ff-sans);
+  }
+
+  & .container {
+    padding-inline: var(--py-xl);
+    padding-block: var(--py-md);
+  }
+}
