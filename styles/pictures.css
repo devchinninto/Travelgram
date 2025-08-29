@@ -1,0 +1,33 @@
+.pictures {
+  padding: 1rem;
+
+  & .images {
+    background-color: var(--bg-color);
+    gap: 1rem;
+    justify-content: center;
+    
+    & img {
+      max-width: 20.5rem;
+      max-height: 20.5rem;
+      aspect-ratio: 1/1;
+      object-fit: cover;
+    }
+  }
+}
+
+@media (width >= 76em) {
+  .pictures {
+    padding-inline: var(--px-lg);
+    padding-block: var(py-lg);
+    gap: 1.5rem;
+
+      & .images {
+       grid-template-columns: repeat(auto-fit, minmax(17.875rem, 1fr));
+
+      & img {
+        max-width: 17.875rem;
+        max-height: 17.875rem;
+      }
+    }
+  }
+}
