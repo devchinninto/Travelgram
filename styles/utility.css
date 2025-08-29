@@ -13,3 +13,28 @@
 .gap-1\.5 {
   gap: 1.5rem;
 }
+
+.align-center {
+  align-items: center;
+}
+
+.even-columns {
+  display: grid;
+  gap: 1rem;
+}
+
+.desktop-only {
+  display: none;
+}
+
+@media (width >= 76em) {
+  & .even-columns {
+    gap: 1.5rem;
+    grid-auto-flow: column;
+    grid-auto-columns: 1fr;
+  }
+
+  & .desktop-only {
+    display: initial;
+  }
+}

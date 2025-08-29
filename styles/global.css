@@ -1,6 +1,7 @@
 * {
   margin: 0;
   padding: 0;
+  font: inherit;
   box-sizing: border-box;
 }
 
@@ -27,6 +28,14 @@
   --py-sm: 1rem;
 }
 
+html {
+  font-family: var(--ff-sans);
+  color: var(--text-color-secondary);
+
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
 .container {
   padding: var(--px-md);  
 }
@@ -38,6 +47,10 @@
 .menu {
   & a {
     text-decoration: none;
+    appearance: unset;
+
+    font: var(--text-md);
+    color: var(--text-color-secondary);
   }  
 
   & span > img {
@@ -48,10 +61,6 @@
     width: 2.5rem;
     height: 2.5rem;
   }
-}
-
-.desktop-only {
-  
 }
 
 @media (width >= 76em) {
