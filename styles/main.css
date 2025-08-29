@@ -1,0 +1,47 @@
+.main{
+  display: grid;
+  padding: 2rem;
+  gap: 2rem;
+}
+
+.about {
+  gap: 1rem;
+  
+  & > img {
+    width: 7.5rem;
+    height: 7.5rem;
+  }
+  
+}
+
+
+.info {
+  & li {
+    gap: .5rem;
+    margin-bottom: 1rem;
+  }
+}
+
+@media (width >= 76em) {
+  & .main {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  & .about {
+    display: flex;
+    max-width: 37rem;
+    gap: 2rem;
+
+    & > img {
+    width: 11rem;
+    height: 11rem;
+    }
+  }
+
+  & .info {
+    display: flex;
+    align-items: center;
+    min-width: 17rem;
+  }
+}

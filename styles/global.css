@@ -37,7 +37,11 @@ html {
 }
 
 .container {
-  padding: var(--px-md);  
+  background-color: var(--surface-color);
+}
+
+header .container {
+  padding: 1rem;
 }
 
 .logo {
@@ -49,7 +53,7 @@ html {
     text-decoration: none;
     appearance: unset;
 
-    font: var(--text-md);
+    font: var(--text);
     color: var(--text-color-secondary);
   }  
 
@@ -63,12 +67,20 @@ html {
   }
 }
 
+ul[role="list"] {
+  list-style: none;
+}
+
+h1 {
+  font: var(--heading);
+}
+
 @media (width >= 76em) {
   :root {
     --heading: 700 2rem/125% var(--ff-sans);
   }
 
-  & .container {
+  & header .container {
     padding-inline: var(--py-xl);
     padding-block: var(--py-md);
   }

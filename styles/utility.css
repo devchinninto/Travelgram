@@ -27,6 +27,8 @@
   display: none;
 }
 
+
+
 @media (width >= 76em) {
   & .even-columns {
     gap: 1.5rem;
