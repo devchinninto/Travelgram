@@ -73,6 +73,8 @@ ul[role="list"] {
 
 h1 {
   font: var(--heading);
+  color: var(--text-color-primary);
+  margin-bottom: 0.5rem;
 }
 
 @media (width >= 76em) {
